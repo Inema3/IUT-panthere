@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    background: #f4f7f6;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -16,6 +17,7 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    color: #FF6A00;
 }
 
 #page-loading-blocs-notifaction {
@@ -30,7 +32,8 @@ a:hover {
 .bloc {
     width: 100%;
     clear: both;
-    background: 50% 50% no-repeat;
+    background: url("img/hero-bg.jpg") no-repeat center center;
+    background-size: cover;
     padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -100,7 +103,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(0, 0, 0, .8);
 }
 
 .d-bloc button:hover {
@@ -133,7 +136,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, .9);
 }
 
 .d-bloc .a-btn:hover,
@@ -150,7 +153,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -290,6 +293,8 @@ a:hover {
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+    background-color: #333;
+    color: #fff;
 }
 
 .navbar-brand {
@@ -299,6 +304,7 @@ a:hover {
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
+    color: #FF6A00;
 }
 
 .navbar-brand img {
