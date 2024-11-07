@@ -1,21 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f7f7f7;
-    font-family: 'Poppins', sans-serif;
+    background: #F5F5F5; /* couleur de fond plus douce */
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: 'Arial', sans-serif; /* police moderne */
 }
 
 a, button {
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     outline: none!important;
+    color: #3498db; /* bleu dynamique */
 }
 
 a:hover {
-    text-decoration: none;
-    cursor: pointer;
+    text-decoration: underline;
+    color: #1d6fa5; /* couleur de survol plus intense */
 }
 
 #page-loading-blocs-notifaction {
@@ -24,14 +25,15 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
-
+    background: #fff url("img/pageload-spinner.gif") no-repeat center center;
 .bloc {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -63,6 +65,9 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
+    -webkit-background-size: auto!important;
+    -moz-background-size: auto!important;
+    -o-background-size: auto!important;
     background-size: auto!important;
 }
 
