@@ -1,18 +1,23 @@
-body {
+body { 
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #f2f2f2;
     overflow-x: hidden;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-a, button {
+a,
+button {
     transition: all 0.3s ease-in-out;
-    outline: none;
+    outline: none!important;
 }
 
-a:hover, button:hover {
-    color: #FF5733; /* Couleur rouge vif au survol */
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FF5733;
 }
 
 #page-loading-blocs-notifaction {
@@ -21,13 +26,13 @@ a:hover, button:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: #ffffff url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
     width: 100%;
     clear: both;
-    background: #FF5733; /* Rouge vif pour les sections principales */
+    background: 50% 50% no-repeat;
     padding: 0 50px;
     background-size: cover;
     position: relative;
@@ -38,44 +43,73 @@ a:hover, button:hover {
     padding-right: 0;
 }
 
+.bloc-lg {
+    padding: 80px 50px;
+}
+
+.bloc-md {
+    padding: 40px;
+}
+
+.bloc-sm {
+    padding: 20px;
+}
+
+.bg-center {
+    background-size: auto!important;
+}
+
 .d-bloc {
-    color: #333; /* Texte sombre pour un bon contraste */
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .d-bloc button:hover {
-    color: #FFF; /* Texte en blanc au survol */
+    color: rgba(0, 0, 0, 1);
 }
 
-.d-bloc .icon-round, .d-bloc .icon-square {
-    border-color: #FF5733; /* Rouge vif pour les icônes */
+.d-bloc .icon-round,
+.d-bloc .icon-square,
+.d-bloc .icon-rounded,
+.d-bloc .icon-semi-rounded-a,
+.d-bloc .icon-semi-rounded-b {
+    border-color: #FF5733;
 }
 
 .d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
-.d-bloc .a-btn {
-    color: #FFF; /* Couleur de texte clair pour les boutons */
+.d-bloc .a-btn,
+.d-bloc .navbar a,
+.d-bloc .navbar-brand,
+.d-bloc a .icon-sm,
+.d-bloc a .icon-md,
+.d-bloc a .icon-lg,
+.d-bloc h1 a,
+.d-bloc h2 a,
+.d-bloc h3 a,
+.d-bloc h4 a,
+.d-bloc h5 a,
+.d-bloc h6 a,
+.d-bloc p a {
+    color: #2980B9;
 }
 
-.d-bloc .a-btn:hover {
-    color: #FF5733; /* Rouge vif au survol des boutons */
-}
-
-.d-bloc h1, .d-bloc h2, .d-bloc h3 {
-    color: #333; /* Couleur de texte sombre pour les titres */
-}
-
-.d-bloc .navbar {
-    background: #333; /* Barre de navigation en gris foncé */
-}
-
-.d-bloc .navbar a {
-    color: #FFF; /* Liens en blanc dans la navbar */
-}
-
-.d-bloc .navbar a:hover {
-    color: #FF5733; /* Liens en rouge vif au survol */
+.d-bloc .a-btn:hover,
+.d-bloc .navbar a:hover,
+.d-bloc .navbar-brand:hover,
+.d-bloc a:hover .icon-sm,
+.d-bloc a:hover .icon-md,
+.d-bloc a:hover .icon-lg,
+.d-bloc a:hover .icon-xl,
+.d-bloc h1 a:hover,
+.d-bloc h2 a:hover,
+.d-bloc h3 a:hover,
+.d-bloc h4 a:hover,
+.d-bloc h5 a:hover,
+.d-bloc h6 a:hover,
+.d-bloc p a:hover {
+    color: #F39C12;
 }
 
 .d-bloc .a-btn:hover,
