@@ -115,7 +115,7 @@ a:hover {
 }
 
 .d-bloc button:hover {
-    background-color: #E64A19;
+    background-color: #FF3D00;
     transform: translateY(-5px);
 }
 
@@ -129,7 +129,7 @@ a:hover {
 }
 
 .d-bloc .divider-h span {
-    border-color: #FF5722;
+    border-color: #FF7043;
 }
 
 .d-bloc .a-btn,
@@ -163,13 +163,12 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: #E64A19;
+    color: #FF3D00;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: #E64A19;
+    background: #FF3D00;
 }
-
 
 
 .d-bloc .btn-wire,
