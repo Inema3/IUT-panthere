@@ -108,11 +108,11 @@ a:hover {
 
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.85); /* Blanc légèrement transparent */
 }
 
 .d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .icon-round,
@@ -120,11 +120,11 @@ a:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
+    border-color: rgba(255, 69, 0, 1); /* Rouge orangé vif */
 }
 
 .d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, .2);
+    border-color: rgba(255, 69, 0, 0.3); /* Rouge orangé clair */
 }
 
 .d-bloc .a-btn,
@@ -141,7 +141,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 105, 180, 1); /* Rose vif */
 }
 
 .d-bloc .a-btn:hover,
@@ -158,57 +158,57 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 165, 0, 1); /* Orange vif */
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 165, 0, 1); /* Orange vif */
 }
 
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
-    color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 165, 0, 1); /* Orange vif */
+    border-color: rgba(255, 165, 0, 1); /* Orange vif */
 }
 
 .d-bloc .panel {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, 0.6); /* Gris clair */
 }
 
 .d-bloc .panel button:hover {
-    color: rgba(0, 0, 0, .7);
+    color: rgba(255, 105, 180, 1); /* Rose vif */
 }
 
 .d-bloc .panel icon {
-    border-color: rgba(0, 0, 0, .7);
+    border-color: rgba(255, 69, 0, 1); /* Rouge orangé vif */
 }
 
 .d-bloc .panel .divider-h span {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: rgba(255, 165, 0, 0.1); /* Orange très clair */
 }
 
 .d-bloc .panel .a-btn {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(255, 69, 0, 1); /* Rouge orangé vif */
 }
 
 .d-bloc .panel .a-btn:hover {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 165, 0, 1); /* Orange vif */
 }
 
 .d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover {
-    color: rgba(0, 0, 0, .7);
-    border-color: rgba(0, 0, 0, .3);
+    color: rgba(255, 69, 0, 1); /* Rouge orangé vif */
+    border-color: rgba(255, 69, 0, 0.5); /* Rouge clair */
 }
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, 0.6); /* Gris clair */
 }
 
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
-    color: rgba(0, 0, 0, .7);
+    color: rgba(255, 105, 180, 1); /* Rose vif */
 }
 
 .l-bloc .icon-round,
@@ -216,13 +216,14 @@ a:hover {
 .l-bloc .icon-rounded,
 .l-bloc .icon-semi-rounded-a,
 .l-bloc .icon-semi-rounded-b {
-    border-color: rgba(0, 0, 0, .7);
+    border-color: rgba(255, 165, 0, 1); /* Orange vif */
 }
 
 .d-bloc .panel .divider-h span,
 .l-bloc .divider-h span {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: rgba(255, 69, 0, 0.3); /* Rouge orangé clair */
 }
+
 
 .d-bloc .panel .a-btn,
 .l-bloc .a-btn,
