@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background: #E0F7FA;
+    background: #FFF2E6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a, button {
@@ -30,11 +30,12 @@ a:hover {
 .bloc {
     width: 100%;
     clear: both;
-    background: #FFEB3B;
+    background: #FF7043;
     padding: 0 30px;
     background-size: cover;
     position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .bloc .container {
@@ -72,7 +73,7 @@ a:hover {
 }
 
 .bg-t-edge { 
-    background: #FF4081 url("img/top-edge-pattern.png") no-repeat top center; 
+    background: #FF80AB url("img/top-edge-pattern.png") no-repeat top center; 
     background-size: cover;
 }
 
@@ -84,7 +85,7 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 64, 129, 0.1);
+    background-color: rgba(255, 105, 180, 0.2);
 }
 
 .texture-paper::before {
@@ -98,22 +99,24 @@ a:hover {
 }
 
 .d-bloc {
-    color: #3F51B5;
+    color: #FFF;
 }
 
 .d-bloc button {
-    background-color: #FF5722;
+    background-color: #FF4081;
     color: #FFF;
     border-radius: 8px;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
     border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
 }
 
 .d-bloc button:hover {
-    background-color: #FF7043;
-    transform: translateY(-2px);
+    background-color: #FF1F66;
+    transform: translateY(-5px);
 }
 
 .d-bloc .icon-round,
@@ -121,11 +124,11 @@ a:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: #FF5722;
+    border-color: #FF4081;
 }
 
 .d-bloc .divider-h span {
-    border-color: #FF5722;
+    border-color: #FF4081;
 }
 
 .d-bloc .a-btn,
@@ -142,7 +145,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: #FF5722;
+    color: #FF7043;
 }
 
 .d-bloc .a-btn:hover,
@@ -159,12 +162,13 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: #FF9800;
+    color: #FF5722;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: #FF9800;
+    background: #FF5722;
 }
+
 
 
 
