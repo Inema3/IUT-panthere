@@ -1,7 +1,11 @@
-body { 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background: #FFF;
+    color: #333;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -16,15 +20,12 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    color: rgba(255, 165, 0, 1);
 }
 
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFF url("img/pageload-spinner.gif") no-repeat center center;
+button:hover {
+    background-color: rgba(255, 165, 0, 1);
+    color: white;
 }
 
 .bloc {
@@ -37,8 +38,8 @@ a:hover {
 }
 
 .bloc .container {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .bloc-lg {
@@ -53,26 +54,47 @@ a:hover {
     padding: 20px 30px;
 }
 
-.bg-center,
-.bg-l-edge,
-.bg-r-edge,
-.bg-t-edge,
-.bg-b-edge,
-.bg-tl-edge,
-.bg-bl-edge,
-.bg-tr-edge,
-.bg-br-edge,
-.bg-repeat {
-    background-size: auto!important;
+.d-bloc {
+    color: rgba(255, 105, 180, 1);
 }
 
-.bg-repeat {
-    background: repeat;
+.d-bloc button {
+    background-color: rgba(255, 105, 180, 1);
+    color: white;
 }
 
-.bg-t-edge { 
-    background: #f4f4f4 url("img/top-edge-pattern.png") no-repeat top center; 
-    background-size: cover;
+.d-bloc .icon-round,
+.d-bloc .icon-square {
+    border-color: rgba(255, 105, 180, 1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.d-bloc .divider-h span {
+    border-color: rgba(255, 105, 180, 0.3);
+}
+
+.d-bloc .a-btn,
+.d-bloc .navbar a,
+.d-bloc .navbar-brand,
+.d-bloc h1 a,
+.d-bloc h2 a,
+.d-bloc h3 a,
+.d-bloc h4 a,
+.d-bloc h5 a,
+.d-bloc h6 a {
+    color: rgba(255, 105, 180, 1);
+}
+
+.d-bloc .a-btn:hover,
+.d-bloc .navbar a:hover,
+.d-bloc .navbar-brand:hover,
+.d-bloc h1 a:hover,
+.d-bloc h2 a:hover,
+.d-bloc h3 a:hover,
+.d-bloc h4 a:hover,
+.d-bloc h5 a:hover,
+.d-bloc h6 a:hover {
+    color: rgba(255, 165, 0, 1);
 }
 
 .bloc-bg-texture::before {
