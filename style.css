@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFF2E6;
+    background: #FFEBEE;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -73,7 +73,7 @@ a:hover {
 }
 
 .bg-t-edge { 
-    background: #FF80AB url("img/top-edge-pattern.png") no-repeat top center; 
+    background: #FFAB91 url("img/top-edge-pattern.png") no-repeat top center; 
     background-size: cover;
 }
 
@@ -99,11 +99,11 @@ a:hover {
 }
 
 .d-bloc {
-    color: #FFF;
+    color: #333;
 }
 
 .d-bloc button {
-    background-color: #FF4081;
+    background-color: #FF5722;
     color: #FFF;
     border-radius: 8px;
     padding: 14px 28px;
@@ -115,7 +115,7 @@ a:hover {
 }
 
 .d-bloc button:hover {
-    background-color: #FF1F66;
+    background-color: #E64A19;
     transform: translateY(-5px);
 }
 
@@ -124,11 +124,12 @@ a:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: #FF4081;
+    border-color: #FF5722;
+    color: #333;
 }
 
 .d-bloc .divider-h span {
-    border-color: #FF4081;
+    border-color: #FF5722;
 }
 
 .d-bloc .a-btn,
@@ -162,13 +163,12 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: #FF5722;
+    color: #E64A19;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: #FF5722;
+    background: #E64A19;
 }
-
 
 
 
