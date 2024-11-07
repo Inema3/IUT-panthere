@@ -1,49 +1,31 @@
-/* Body */
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
+    background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #333333;
 }
 
-/* Liens et boutons */
 a,
 button {
-    transition: all 0.3s ease-in-out;
-    outline: none;
-    text-decoration: none;
+    transition: all .3s ease-in-out;
+    outline: none!important;
 }
 
-a:hover,
-button:hover {
-    color: #007BFF;
+a:hover {
+    text-decoration: none;
     cursor: pointer;
 }
 
-/* Page Loading Notification */
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
-    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
     z-index: 100000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
+    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
-
-#page-loading-blocs-notifaction img {
-    width: 60px;
-}
-
 
 .bloc {
     width: 100%;
