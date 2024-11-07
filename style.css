@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #F7F9FC;
+    background: #E0F7FA;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,10 +30,11 @@ a:hover {
 .bloc {
     width: 100%;
     clear: both;
-    background: 50% 50% no-repeat;
+    background: #FFEB3B;
     padding: 0 30px;
     background-size: cover;
     position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .bloc .container {
@@ -71,7 +72,7 @@ a:hover {
 }
 
 .bg-t-edge { 
-    background: #F3F6FB url("img/top-edge-pattern.png") no-repeat top center; 
+    background: #FF4081 url("img/top-edge-pattern.png") no-repeat top center; 
     background-size: cover;
 }
 
@@ -83,7 +84,7 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 204, 255, 0.1);
+    background-color: rgba(255, 64, 129, 0.1);
 }
 
 .texture-paper::before {
@@ -97,11 +98,22 @@ a:hover {
 }
 
 .d-bloc {
-    color: #16A085;
+    color: #3F51B5;
+}
+
+.d-bloc button {
+    background-color: #FF5722;
+    color: #FFF;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
 }
 
 .d-bloc button:hover {
-    color: #FF6347;
+    background-color: #FF7043;
+    transform: translateY(-2px);
 }
 
 .d-bloc .icon-round,
@@ -109,11 +121,11 @@ a:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: #FF6347;
+    border-color: #FF5722;
 }
 
 .d-bloc .divider-h span {
-    border-color: #FF6347;
+    border-color: #FF5722;
 }
 
 .d-bloc .a-btn,
@@ -130,7 +142,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: #FF6347;
+    color: #FF5722;
 }
 
 .d-bloc .a-btn:hover,
@@ -147,12 +159,15 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: #FF4500;
+    color: #FF9800;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: #FF4500;
+    background: #FF9800;
 }
+
+
+
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
     color: rgba(255, 105, 180, 1);
