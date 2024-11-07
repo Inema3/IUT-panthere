@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFEBEE;
+    background: #FF80AB;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,7 +30,7 @@ a:hover {
 .bloc {
     width: 100%;
     clear: both;
-    background: #FF7043;
+    background: #FFF;
     padding: 0 30px;
     background-size: cover;
     position: relative;
@@ -51,7 +51,7 @@ a:hover {
     padding: 40px 30px;
 }
 
-.bloc-sm {
+.bbloc-sm {
     padding: 20px 30px;
 }
 
@@ -73,7 +73,7 @@ a:hover {
 }
 
 .bg-t-edge { 
-    background: #FFAB91 url("img/top-edge-pattern.png") no-repeat top center; 
+    background: #FF80AB url("img/top-edge-pattern.png") no-repeat top center; 
     background-size: cover;
 }
 
@@ -85,7 +85,7 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 105, 180, 0.2);
+    background-color: rgba(255, 182, 193, 0.2);
 }
 
 .texture-paper::before {
@@ -99,11 +99,11 @@ a:hover {
 }
 
 .d-bloc {
-    color: #333;
+    color: #FF80AB;
 }
 
 .d-bloc button {
-    background-color: #FF5722;
+    background-color: #FF4081;
     color: #FFF;
     border-radius: 8px;
     padding: 14px 28px;
@@ -115,7 +115,7 @@ a:hover {
 }
 
 .d-bloc button:hover {
-    background-color: #FF3D00;
+    background-color: #F50057;
     transform: translateY(-5px);
 }
 
@@ -124,12 +124,12 @@ a:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: #FF5722;
-    color: #333;
+    border-color: #FF4081;
+    color: #FF80AB;
 }
 
 .d-bloc .divider-h span {
-    border-color: #FF7043;
+    border-color: #FF80AB;
 }
 
 .d-bloc .a-btn,
@@ -146,7 +146,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: #FF7043;
+    color: #FF4081;
 }
 
 .d-bloc .a-btn:hover,
@@ -163,12 +163,13 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: #FF3D00;
+    color: #F50057;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: #FF3D00;
+    background: #F50057;
 }
+
 
 
 .d-bloc .btn-wire,
