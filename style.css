@@ -1,22 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    background: #F5F5F5; /* couleur de fond plus douce */
+    background: #1c1c1c; 
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Arial', sans-serif; /* police moderne */
+    font-family: 'Montserrat', sans-serif;
 }
 
 a, button {
     transition: all 0.3s ease-in-out;
     outline: none!important;
-    color: #3498db; /* bleu dynamique */
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #1d6fa5; /* couleur de survol plus intense */
+a:hover, button:hover {
+    color: #ff6f61; 
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 #page-loading-blocs-notifaction {
@@ -25,15 +25,14 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #fff url("img/pageload-spinner.gif") no-repeat center center;
+    background: #333 url("img/pageload-spinner.gif") no-repeat center center;
+}
+
 .bloc {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -55,19 +54,7 @@ a:hover {
     padding: 20px 50px;
 }
 
-.bg-center,
-.bg-l-edge,
-.bg-r-edge,
-.bg-t-edge,
-.bg-b-edge,
-.bg-tl-edge,
-.bg-bl-edge,
-.bg-tr-edge,
-.bg-br-edge,
-.bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
+.bg-center, .bg-l-edge, .bg-r-edge, .bg-t-edge, .bg-b-edge, .bg-tl-edge, .bg-bl-edge, .bg-tr-edge, .bg-br-edge, .bg-repeat {
     background-size: auto!important;
 }
 
@@ -99,23 +86,19 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, 1);
 }
 
-.d-bloc .icon-round,
-.d-bloc .icon-square,
-.d-bloc .icon-rounded,
-.d-bloc .icon-semi-rounded-a,
-.d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
+.d-bloc .icon-round, .d-bloc .icon-square, .d-bloc .icon-rounded, .d-bloc .icon-semi-rounded-a, .d-bloc .icon-semi-rounded-b {
+    border-color: rgba(255, 255, 255, 0.9);
 }
 
 .d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, .2);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .d-bloc .a-btn,
