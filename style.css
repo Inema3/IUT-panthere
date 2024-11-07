@@ -1,31 +1,49 @@
+/* Body */
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    background-color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #333333;
 }
 
+/* Liens et boutons */
 a,
 button {
-    transition: all .3s ease-in-out;
-    outline: none!important;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    text-decoration: none;
 }
 
-a:hover {
-    text-decoration: none;
+a:hover,
+button:hover {
+    color: #007BFF;
     cursor: pointer;
 }
 
+/* Page Loading Notification */
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
-    bottom: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
 }
+
+#page-loading-blocs-notifaction img {
+    width: 60px;
+}
+
 
 .bloc {
     width: 100%;
