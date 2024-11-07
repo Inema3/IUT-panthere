@@ -76,10 +76,13 @@ a:hover {
     background: repeat;
 }
 
-.bg-t-edge {
-    background: top no-repeat;
+./* bg-t-edge */
+.bg-t-edge { 
+    background: #f4f4f4 url("img/top-edge-pattern.png") no-repeat top center; 
+    background-size: cover;
 }
 
+/* Bloc Texture */
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -88,16 +91,21 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
+/* Texture Paper */
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    opacity: 0.08;
 }
 
+/* Parallax Effect */
 .b-parallax {
     background-attachment: fixed;
 }
+
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
