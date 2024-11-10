@@ -88,39 +88,54 @@ a:hover, button:hover {
     background-size: auto!important;
 }
 
-.bg-repeat {
-    background: repeat;
+@media (max-width: 768px) {
+    .bloc-lg {
+        padding: 50px 20px;
+    }
+    .bloc-md {
+        padding: 30px 20px;
+    }
+    .bloc-sm {
+        padding: 15px 20px;
+    }
 }
 
 .bg-t-edge {
-    background: top no-repeat;
+    background-position: top center;
 }
 
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.bg-b-edge {
+    background-position: bottom center;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
+.bg-l-edge {
+    background-position: left center;
 }
 
-.b-parallax {
-    background-attachment: fixed;
+.bg-r-edge {
+    background-position: right center;
 }
 
-.d-bloc {
-    color: rgba(255, 255, 255, .7);
+.bloc:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+..bloc-lg {
+    padding: 90px 60px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
 }
 
-.d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+.bloc-md {
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.bloc-sm {
+    padding: 20px 30px;
+    background-color: #fafafa;
+    border-radius: 8px;
 }
 
 .d-bloc .icon-round,
@@ -128,11 +143,25 @@ a:hover, button:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
+    border-color: #FF00FF;
+    border-width: 3px;
+    transition: all 0.3s ease-in-out;
 }
 
 .d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, .2);
+    border-color: #FF00FF;
+    border-width: 1.5px;
+}
+
+.d-bloc .icon-round:hover,
+.d-bloc .icon-square:hover,
+.d-bloc .icon-rounded:hover,
+.d-bloc .icon-semi-rounded-a:hover,
+.d-bloc .icon-semi-rounded-b:hover {
+    border-color: #00FFFF;
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
 }
 
 .d-bloc .a-btn,
@@ -149,7 +178,9 @@ a:hover, button:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .d-bloc .a-btn:hover,
@@ -166,17 +197,21 @@ a:hover, button:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: #00FFFF;
+    transform: scale(1.05);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: rgba(255, 255, 255, 1);
+    background: #00FFFF;
 }
 
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
-    color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 1);
+    color: #FFFFFF;
+    border-color: #FF00FF;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+    transition: all 0.3s ease;
 }
 
 .d-bloc .panel {
