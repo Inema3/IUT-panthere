@@ -143,14 +143,14 @@ a:hover, button:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: #ff4081;
-    border-width: 2px;
-    transition: border-color 0.3s ease, transform 0.3s ease;
+    border-color: #FF00FF;
+    border-width: 3px;
+    transition: all 0.3s ease-in-out;
 }
 
 .d-bloc .divider-h span {
-    border-color: #ff4081;
-    border-width: 1px;
+    border-color: #FF00FF;
+    border-width: 1.5px;
 }
 
 .d-bloc .icon-round:hover,
@@ -158,10 +158,12 @@ a:hover, button:hover {
 .d-bloc .icon-rounded:hover,
 .d-bloc .icon-semi-rounded-a:hover,
 .d-bloc .icon-semi-rounded-b:hover {
-    border-color: #00e5ff;
-    transform: scale(1.1);
+    border-color: #00FFFF;
+    transform: scale(1.2);
     cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
 }
+
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
@@ -176,7 +178,9 @@ a:hover, button:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(251, 236, 204, 0,8);
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .d-bloc .a-btn:hover,
@@ -193,17 +197,21 @@ a:hover, button:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(251, 236, 204, 0,8);
+    color: #00FFFF;
+    transform: scale(1.05);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: rgba(251, 236, 204, 1);
+    background: #00FFFF;
 }
 
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
-    color: rgba(251, 236, 204, 1);
-    border-color: rgba(251, 236, 204, 1);
+    color: #FFFFFF;
+    border-color: #FF00FF;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+    transition: all 0.3s ease;
 }
 
 .d-bloc .panel {
