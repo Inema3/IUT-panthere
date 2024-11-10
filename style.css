@@ -88,39 +88,48 @@ a:hover, button:hover {
     background-size: auto!important;
 }
 
-.bg-repeat {
-    background: repeat;
+@media (max-width: 768px) {
+    .bloc-lg {
+        padding: 50px 20px;
+    }
+    .bloc-md {
+        padding: 30px 20px;
+    }
+    .bloc-sm {
+        padding: 15px 20px;
+    }
 }
 
 .bg-t-edge {
-    background: top no-repeat;
+    background-position: top center;
 }
 
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.bg-b-edge {
+    background-position: bottom center;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
+.bg-l-edge {
+    background-position: left center;
 }
 
-.b-parallax {
-    background-attachment: fixed;
+.bg-r-edge {
+    background-position: right center;
 }
 
-.d-bloc {
-    color: rgba(255, 255, 255, .7);
+.bloc:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+.bloc-lg {
+    padding: 100px 50px;
 }
 
-.d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+.bloc-md {
+    padding: 50px;
+}
+
+.bloc-sm {
+    padding: 20px 50px;
 }
 
 .d-bloc .icon-round,
