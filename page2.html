@@ -1,169 +1,150 @@
-<header class="bloc bgc-soft-coral l-bloc" id="bloc-0">
-    <div class="container bloc-sm">
-        <nav class="navbar row" aria-label="Navigation principale">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'agence La Panthère" height="40" srcset="img/agence-la-panthere-monochrome-small.svg 480w, img/agence-la-panthere-monochrome.svg 800w">
-                </a>
-            </div>
-            <div class="navbar-collapse navbar-1 special-dropdown-nav">
-                <ul class="site-navigation nav navbar-nav">
-                    <li><a href="index.html" style="color: #003366;">Accueil</a></li>
-                    <li><a href="contactez-nous.html" style="color: #003366;">Contactez-nous ➔</a></li>
-                </ul>
-            </div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Agence La Panthère</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@400&family=Lora&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #F4F4F4;
+            color: #003366;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Form */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h1 {
+            color: #003366;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+        }
+
+        section h2 {
+            color: #003366;
+            font-family: 'Lora', serif;
+            font-size: 24px;
+        }
+
+        form {
+            background-color: #FF6F61;
+            padding: 20px;
+            border-radius: 8px;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            background-color: #F4F4F4;
+            color: #003366;
+            border: 1px solid #D3D3D3;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #003366;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        form button:hover {
+            background-color: #FF6F61;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #FF6F61;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="logo.svg" alt="Logo Agence La Panthère" height="40"></a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-    </div>
-</header>
+    </header>
 
-<!-- Section Contact -->
-<div class="bloc bgc-mint-green bg-repeat d-bloc bloc-bg-texture texture-paper" id="bloc-6" aria-label="Section contact pour la création de sites web sur-mesure">
-    <div class="container bloc-lg">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1 class="hero-bloc-text" style="color: #003366;">Contactez La Panthère pour Créer Votre Site Web Sur-Mesure</h1>
-                <h2 style="color: #003366;">Solutions Web Innovantes et Adaptées à Vos Besoins</h2>
-                <p class="mg-lg tight-width-whitespace" style="color: #003366;">
-                    Nous sommes ravis de collaborer avec vous pour la création de votre site web sur-mesure.<br>
-                    Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+    <section>
+        <h1>Parlons web design !</h1>
+        <p>Nous sommes ravis que vous souhaitiez collaborer avec notre agence. Parlez-nous de votre projet en complétant le formulaire ci-dessous.</p>
+        <h2>Rentrons en contact</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required placeholder="Entrez votre nom">
 
-<!-- Formulaire de Contact -->
-<div class="bloc bgc-off-white l-bloc" id="bloc-7">
-    <div class="container bloc-lg">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <form id="form_1" novalidate>
-                    <fieldset>
-                        <legend style="color: #003366;">Formulaire de contact</legend>
-                        <div class="form-group">
-                            <label for="name" style="color: #003366;">Nom</label>
-                            <input id="name" class="form-control" type="text" required aria-label="Nom complet" placeholder="Entrez votre nom" />
-                        </div>
-                        <div class="form-group">
-                            <label for="email" style="color: #003366;">Adresse email</label>
-                            <input id="email" class="form-control" type="email" required aria-label="Adresse email" placeholder="Entrez votre adresse email" />
-                        </div>
-                        <div class="form-group">
-                            <label for="input_504" style="color: #003366;">Comment nous avez-vous connu ?</label>
-                            <input id="input_504" class="form-control" type="text" required aria-label="Comment nous avez-vous connu ?" placeholder="Exemple : Recherche Google" />
-                        </div>
-                        <div class="form-group">
-                            <label for="message" style="color: #003366;">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
-                            <textarea id="message" class="form-control" rows="4" required aria-label="Détails du projet" placeholder="Expliquez votre projet en quelques lignes"></textarea>
-                        </div>
-                        <button class="bloc-button btn btn-lg btn-block" style="background-color: #FF6F61; color: #ffffff;" type="submit">
-                            Envoyer
-                        </button>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <p style="color: #003366;">
-                    <strong>Contactez-nous</strong><br>
-                    Email : <a href="mailto:contact@agencelapanthere.com" style="color: #FF6F61;">contact@agencelapanthere.com</a><br>
-                    Adresse : 2 place Sathonay, 69001 Lyon<br>
-                    Horaires : Du lundi au vendredi, de 9h à 18h<br>
-                    <strong>Nous rendre visite :</strong><br>
-                    <a href="https://www.google.com/maps" target="_blank" style="color: #FF6F61;">Voir le plan</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+            <label for="email">Adresse email</label>
+            <input type="email" id="email" name="email" required placeholder="Entrez votre adresse email">
 
-<style>
+            <label for="how-you-found-us">Comment nous avez-vous connu ?</label>
+            <input type="text" id="how-you-found-us" name="how-you-found-us" required placeholder="Exemple : Recherche Google">
 
-    .bloc.bg-dots-bg {
-        background-color: #003366 !important;
-        color: white;
-    }
+            <label for="project-brief">Brief de votre projet</label>
+            <textarea id="project-brief" name="project-brief" required placeholder="Ajoutez autant de détails que nécessaire"></textarea>
 
-    /* Formulaire : transition de focus */
-    .form-control {
-        transition: all 0.3s ease-in-out;
-        border: 1px solid #d3d3d3;
-        border-radius: 5px;
-        padding: 10px;
-        font-size: 16px;
-    }
-    .form-control:focus {
-        border-color: #FF6F61;
-        box-shadow: 0 0 5px rgba(255, 111, 97, 0.6);
-        outline: none;
-    }
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
 
-    /* Formulaire responsive */
-    .col-sm-12.col-md-6 {
-        margin-bottom: 20px;
-    }
-
-    /* Changement de couleur du bouton au survol */
-    .bloc-button:hover {
-        background-color: #003366;
-        color: #FF6F61;
-        transition: all 0.3s ease;
-    }
-
-    /* Animation du bouton d'envoi */
-    .bloc-button {
-        background-color: #FF6F61;
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 15px 30px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-
-    a:hover {
-        color: #FF6F61;
-        text-decoration: underline;
-        transition: color 0.3s ease;
-    }
-
-    /* Formulaire mobile-friendly */
-    @media (max-width: 768px) {
-        .col-sm-12.col-md-6 {
-            margin-bottom: 30px;
-        }
-
-        .bloc-button {
-            width: 100%;
-            padding: 15px;
-        }
-
-        .form-control {
-            width: 100%;
-            font-size: 14px;
-        }
-    }
-
-    .bloc.bg-dots-bg.bg-repeat {
-        background-color: #A3D9A5 !important; 
-    }
-    
-    .bloc.bgc-white.l-bloc {
-        background-color: #F8D4D4 !important; 
-    }
-
-    /* Changement de couleur du lien de l'adresse email */
-    .bloc-button {
-        background-color: #FF6F61;
-    }
-
-    .bloc-button:hover {
-        background-color: #003366;
-        color: #FF6F61;
-    }
-
-    .site-navigation li a:hover {
-        color: #FF6F61;
-    }
-</style>
+    <footer>
+        <p>Email : <a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a></p>
+        <p>Adresse : 2 place Sathonay, 69001 Lyon</p>
+        <p>Ouvert du lundi au vendredi, de 9h à 18h</p>
+    </footer>
+</body>
+</html>
