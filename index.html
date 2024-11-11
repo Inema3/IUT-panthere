@@ -26,103 +26,32 @@
  
 <!-- Analytics END -->
     
-
-html
-Copier le code
-<head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #333333;
-            background-color: #f5f5f5;
-        }
-
-        .navbar {
-            background-color: #333333;
-            color: #ffffff;
-            padding: 10px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .navbar-brand img {
-            height: 50px;
-        }
-
-        .navbar-nav li a {
-            color: #ffffff;
-            font-size: 18px;
-            padding: 10px 20px;
-            transition: color 0.3s ease;
-        }
-
-        .navbar-nav li a:hover {
-            color: #ff9f00;
-        }
-
-        .page-container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .bloc {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .keywords {
-            font-size: 1px;
-            color: #cccccc;
-        }
-
-        .navbar-toggle .icon-bar {
-            background-color: #ffffff;
-            width: 22px;
-            margin: 4px 0;
-        }
-
-        .footer-links a {
-            color: #333333;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
-        .footer-links a:hover {
-            color: #ff9f00;
-        }
-
-    </style>
 </head>
 <body>
-    <div class="page-container">
-        <div class="bloc bgc-white l-bloc" id="bloc-0">
-            <div class="container bloc-sm">
-                <nav class="navbar row">
-                    <div class="navbar-header">
-                        <div class="keywords">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
-                        <a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="paris web design logo agence web meilleure agence" /></a>
-                        <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-                        <ul class="site-navigation nav navbar-nav">
-                            <li><a href="index.html">Accueil</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</body>
-						<a href="page2.html">Contact &gt;</a>
+<!-- Principal conteneur -->
+<div class="page-container">
+<!-- bloc-0 -->
+<div class="bloc bgc-f4f4f4 l-bloc " id="bloc-0">
+	<div class="container bloc-sm">
+
+		<nav class="navbar row">
+			<div class="navbar-header">
+				<div class="keywords" style="color:#D3D3D3;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
+				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="paris web design logo agence web meilleure agence" height="40" /></a>
+				<div class="keywords" style="color:#D3D3D3;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+				<ul class="site-navigation nav navbar-nav">
+					<li>
+						<a href="index.html" style="color:#003366;">Accueil</a>
+					</li>
+					<li>
+					</li>
+					<li>
+						<a href="page2.html" style="color:#003366;">page2 &gt;</a>
 					</li>
 				</ul>
 			</div>
@@ -132,16 +61,18 @@ Copier le code
 <!-- bloc-0 END -->
 
 <!-- bloc-1-presentation -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
+<div class="bloc bgc-003366 bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
 				<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="Agence La Panthère, agence web paris, création logo paris" />
-				<h1 class="text-center hero-bloc-text tc-white ">
+				<h1 class="text-center hero-bloc-text tc-white" style="font-family: 'Montserrat', sans-serif;">
 					Découvrez l'Agence La Panthère et Nos Solutions Web Sur-Mesure
 				</h1>
 				<div class="text-center">
-					<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
+					<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero" style="background-color: #FF6F61; color: white; font-family: 'Open Sans', sans-serif;">
+						Contact
+					</a>
 				</div>
 			</div>
 		</div>
@@ -281,7 +212,7 @@ Copier le code
 				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 			</h2>
 			<div class="col-sm-12 text-center">
-				<a href="Contactez-nous.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+				<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 			</div>
 		</div>
 	</div>
