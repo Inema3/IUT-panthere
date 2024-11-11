@@ -600,13 +600,10 @@ a[data-lightbox]:hover::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
 }
 
 a[data-lightbox]:hover img {
     opacity: 0.6;
-    -webkit-animation-fill-mode: none;
-    animation-fill-mode: none;
 }
 
 #lightbox-modal {
@@ -617,7 +614,7 @@ a[data-lightbox]:hover img {
 #lightbox-modal .modal-dialog {
     width: 90%;
     max-width: 900px;
-    margin: 0 auto 0;
+    margin: 0 auto;
 }
 
 #lightbox-modal .modal-dialog img {
@@ -722,16 +719,16 @@ a {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
     font-size: 11px;
 }
 
-.tight-width-whitespace {
+..tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -743,14 +740,14 @@ p {
     margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
+    padding: 12px 28px;
     font-size: 16px;
     font-weight: 700;
 }
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
@@ -767,7 +764,7 @@ h3 {
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
@@ -803,7 +800,7 @@ h4 {
 
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    padding: 40px;
 }
 
 .bold-link {
@@ -890,10 +887,10 @@ h4 {
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 80%;
     }
     .nav-center.navbar .nav {
-        max-width: 100%
+        max-width: 100%;
     }
 }
 
