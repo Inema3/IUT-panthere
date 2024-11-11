@@ -1,26 +1,97 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="seo, google, site web, site internet, agence design lyonnais, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design">
-    <meta name="description" content="La Panthère, agence web à Lyon, crée des sites sur-mesure au design moderne, efficaces et adaptés à vos besoins pour booster votre visibilité et transformer votre image.">
+    <meta name="keywords" content="agence web, création site web Lyon, design sur-mesure, visibilité en ligne, identité digitale, développement web">
+    <meta name="description" content="La Panthère, agence web à Lyon, conçoit des sites modernes et personnalisés pour transformer votre image et booster votre visibilité en ligne.">
+    <meta property="og:title" content="La Panthère - Création Web à Lyon : Sites qui marquent votre identité">
+    <meta property="og:description" content="Agence web à Lyon spécialisée dans la création de sites sur-mesure pour une identité numérique puissante et un design moderne.">
+    <meta property="og:image" content="path/to/image.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
+    <link rel="icon" type="image/png" href="favicon.jpg">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/et-line.css">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	
+    <!-- Fonts for enhanced readability and aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+    <!-- JavaScript files with defer for performance -->
+    <script src="./js/jquery-2.1.0.js" defer></script>
+    <script src="./js/bootstrap.js" defer></script>
+    <script src="./js/blocs.js" defer></script>
+    <script src="./js/jquery.touchSwipe.js" defer></script>
+    <script src="./js/gmaps.js" defer></script>
 
     <title>La Panthère - Création Web à Lyon : Des Sites qui Marquent Votre Identité</title>
+</head>
 
+<body>
+    <!-- Header section -->
+    <header class="text-center py-4" role="banner">
+        <img src="img/logo.png" alt="Logo de La Panthère - Agence web à Lyon" class="img-fluid">
+        <h1 style="color: #003366; font-family: 'Montserrat', sans-serif; font-size: 2.5em; font-weight: 700;">
+            La Panthère - Votre Agence Web à Lyon
+        </h1>
+        <p style="color: #FF6F61; font-family: 'Open Sans', sans-serif;">
+            Des solutions digitales modernes pour transformer votre image et booster votre visibilité.
+        </p>
+    </header>
+
+    <!-- Main content section with animation for impact -->
+    <main role="main">
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="container text-center py-5">
+            <h2 class="display-4" style="color: #003366;">Nos Projets</h2>
+            <p style="color: #A3D9A5;">Découvrez comment nous avons aidé nos clients à se démarquer avec des designs uniques et des solutions digitales efficaces.</p>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="portfolio-item" style="position: relative; overflow: hidden; border-radius: 15px;">
+                        <img src="img/1.jpg" alt="Refonte d'un site web pour un journal local" class="img-fluid" style="transition: transform 0.5s ease;">
+                        <div class="portfolio-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.6); color: #FFF; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.5s;">
+                            <h3>Refonte d'un site web pour un journal local</h3>
+                            <p>Un design moderne et épuré pour un journal lyonnais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="portfolio-item" style="position: relative; overflow: hidden; border-radius: 15px;">
+                        <img src="img/2.jpg" alt="Création d'un site pour photographes" class="img-fluid" style="transition: transform 0.5s ease;">
+                        <div class="portfolio-info" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.6); color: #FFF; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.5s;">
+                            <h3>Création d'un site pour photographes</h3>
+                            <p>Une plateforme unique pour exposer leurs œuvres.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4" role="contentinfo" style="background: #003366; color: #F4F4F4;">
+        <p>&copy; 2024 La Panthère - Agence Web à Lyon. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Custom Script for Interactivity -->
+    <script>
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.querySelector('.portfolio-info').style.opacity = '1';
+                item.querySelector('img').style.transform = 'scale(1.1)';
+            });
+            item.addEventListener('mouseout', () => {
+                item.querySelector('.portfolio-info').style.opacity = '0';
+                item.querySelector('img').style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
     
 <!-- Analytics -->
  
