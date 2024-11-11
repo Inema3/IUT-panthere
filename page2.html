@@ -1,4 +1,4 @@
-<header class="bloc bgc-white l-bloc" id="bloc-0">
+<header class="bloc bgc-soft-coral l-bloc" id="bloc-0">
     <div class="container bloc-sm">
         <nav class="navbar row" aria-label="Navigation principale">
             <div class="navbar-header">
@@ -17,7 +17,7 @@
 </header>
 
 <!-- Section Contact -->
-<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6" aria-label="Section contact pour la création de sites web sur-mesure">
+<div class="bloc bgc-mint-green bg-repeat d-bloc bloc-bg-texture texture-paper" id="bloc-6" aria-label="Section contact pour la création de sites web sur-mesure">
     <div class="container bloc-lg">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -33,7 +33,7 @@
 </div>
 
 <!-- Formulaire de Contact -->
-<div class="bloc bgc-white l-bloc" id="bloc-7">
+<div class="bloc bgc-off-white l-bloc" id="bloc-7">
     <div class="container bloc-lg">
         <div class="row">
             <div class="col-sm-12 col-md-6">
@@ -77,6 +77,12 @@
 </div>
 
 <style>
+    /* Fond du bloc Header */
+    .bloc.bg-dots-bg {
+        background-color: #003366;
+        color: white;
+    }
+
     /* Formulaire : transition de focus */
     .form-control {
         transition: all 0.3s ease-in-out;
@@ -139,22 +145,21 @@
             font-size: 14px;
         }
     }
-    
-    /* Couleur de fond pour le texte du formulaire */
-    legend {
-        color: #003366;
+
+    /* Nouveau fond du formulaire */
+    .bloc.bg-dots-bg.bg-repeat {
+        background-color: #A3D9A5; /* Mint green background */
     }
     
-    /* Couleur de fond des champs de saisie */
-    .form-control {
-        background-color: #f4f4f4;
+    .bloc.bgc-white.l-bloc {
+        background-color: #F4F4F4; /* Soft Off-White background */
     }
 
     /* Changement de couleur du lien de l'adresse email */
     .bloc-button {
         background-color: #FF6F61;
     }
-    
+
     .bloc-button:hover {
         background-color: #003366;
         color: #FF6F61;
@@ -163,5 +168,4 @@
     .site-navigation li a:hover {
         color: #FF6F61;
     }
-
 </style>
