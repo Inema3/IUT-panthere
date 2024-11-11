@@ -1,4 +1,4 @@
-<header class="bloc bgc-soft-coral l-bloc" id="bloc-0">
+<header class="bloc bgc-navy-blue l-bloc" id="bloc-0">
     <div class="container bloc-sm">
         <nav class="navbar row" aria-label="Navigation principale">
             <div class="navbar-header">
@@ -8,8 +8,8 @@
             </div>
             <div class="navbar-collapse navbar-1 special-dropdown-nav">
                 <ul class="site-navigation nav navbar-nav">
-                    <li><a href="index.html" style="color: #003366;">Accueil</a></li>
-                    <li><a href="contactez-nous.html" style="color: #003366;">Contactez-nous ➔</a></li>
+                    <li><a href="index.html" style="color: #ffffff;">Accueil</a></li>
+                    <li><a href="contactez-nous.html" style="color: #ffffff;">Contactez-nous ➔</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,43 +33,43 @@
 </div>
 
 <!-- Formulaire de Contact -->
-<div class="bloc bgc-off-white l-bloc" id="bloc-7">
+<div class="bloc bgc-soft-coral l-bloc" id="bloc-7">
     <div class="container bloc-lg">
         <div class="row">
             <div class="col-sm-12 col-md-6">
                 <form id="form_1" novalidate>
                     <fieldset>
-                        <legend style="color: #003366;">Formulaire de contact</legend>
+                        <legend style="color: #ffffff;">Formulaire de contact</legend>
                         <div class="form-group">
-                            <label for="name" style="color: #003366;">Nom</label>
+                            <label for="name" style="color: #ffffff;">Nom</label>
                             <input id="name" class="form-control" type="text" required aria-label="Nom complet" placeholder="Entrez votre nom" />
                         </div>
                         <div class="form-group">
-                            <label for="email" style="color: #003366;">Adresse email</label>
+                            <label for="email" style="color: #ffffff;">Adresse email</label>
                             <input id="email" class="form-control" type="email" required aria-label="Adresse email" placeholder="Entrez votre adresse email" />
                         </div>
                         <div class="form-group">
-                            <label for="input_504" style="color: #003366;">Comment nous avez-vous connu ?</label>
+                            <label for="input_504" style="color: #ffffff;">Comment nous avez-vous connu ?</label>
                             <input id="input_504" class="form-control" type="text" required aria-label="Comment nous avez-vous connu ?" placeholder="Exemple : Recherche Google" />
                         </div>
                         <div class="form-group">
-                            <label for="message" style="color: #003366;">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
+                            <label for="message" style="color: #ffffff;">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
                             <textarea id="message" class="form-control" rows="4" required aria-label="Détails du projet" placeholder="Expliquez votre projet en quelques lignes"></textarea>
                         </div>
-                        <button class="bloc-button btn btn-lg btn-block" style="background-color: #FF6F61; color: #ffffff;" type="submit">
+                        <button class="bloc-button btn btn-lg btn-block" style="background-color: #FF6F61; color: white;" type="submit">
                             Envoyer
                         </button>
                     </fieldset>
                 </form>
             </div>
             <div class="col-sm-12 col-md-6">
-                <p style="color: #003366;">
+                <p style="color: #ffffff;">
                     <strong>Contactez-nous</strong><br>
-                    Email : <a href="mailto:contact@agencelapanthere.com" style="color: #FF6F61;">contact@agencelapanthere.com</a><br>
+                    Email : <a href="mailto:contact@agencelapanthere.com" style="color: #A3D9A5;">contact@agencelapanthere.com</a><br>
                     Adresse : 2 place Sathonay, 69001 Lyon<br>
                     Horaires : Du lundi au vendredi, de 9h à 18h<br>
                     <strong>Nous rendre visite :</strong><br>
-                    <a href="https://www.google.com/maps" target="_blank" style="color: #FF6F61;">Voir le plan</a>
+                    <a href="https://www.google.com/maps" target="_blank" style="color: #A3D9A5;">Voir le plan</a>
                 </p>
             </div>
         </div>
@@ -78,23 +78,51 @@
 
 <style>
     /* Fond du bloc Header */
-    .bloc.bg-dots-bg {
-        background-color: #003366 !important; /* Fond bleu marine avec la mention importante */
+    .bloc.bgc-navy-blue {
+        background-color: #003366 !important; /* Fond bleu marine */
         color: white;
     }
 
-    /* Formulaire : transition de focus */
-    .form-control {
-        transition: all 0.3s ease-in-out;
-        border: 1px solid #d3d3d3;
-        border-radius: 5px;
-        padding: 10px;
-        font-size: 16px;
+    /* Fond de la section contact */
+    .bloc.bgc-soft-coral {
+        background-color: #FF6F61 !important; /* Fond corail doux */
+        color: white;
     }
-    .form-control:focus {
-        border-color: #FF6F61;
-        box-shadow: 0 0 5px rgba(255, 111, 97, 0.6);
-        outline: none;
+
+    .bloc.bgc-mint-green {
+        background-color: #A3D9A5 !important; /* Fond vert menthe */
+    }
+
+    .bloc.bgc-white.l-bloc {
+        background-color: #F4F4F4 !important; /* Fond blanc cassé */
+    }
+
+    /* Effet sur les liens */
+    a {
+        color: #FF6F61;
+    }
+
+    a:hover {
+        color: #003366;
+        text-decoration: underline;
+    }
+
+    /* Changement de couleur du bouton au survol */
+    .bloc-button {
+        background-color: #FF6F61;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .bloc-button:hover {
+        background-color: #003366;
+        color: #FF6F61;
     }
 
     /* Formulaire responsive */
@@ -102,11 +130,23 @@
         margin-bottom: 20px;
     }
 
-    /* Changement de couleur du bouton au survol */
-    .bloc-button:hover {
-        background-color: #003366;
-        color: #FF6F61;
-        transition: all 0.3s ease;
+    /* Changement de couleur du formulaire */
+    .form-group label {
+        color: #ffffff;
+    }
+
+    .form-control {
+        background-color: #ffffff;
+        color: #003366;
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .form-control:focus {
+        border-color: #FF6F61;
+        box-shadow: 0 0 5px rgba(255, 111, 97, 0.6);
+        outline: none;
     }
 
     /* Animation du bouton d'envoi */
@@ -122,11 +162,9 @@
         transition: all 0.3s ease;
     }
 
-    /* Effet de survol pour les liens */
-    a:hover {
+    .bloc-button:hover {
+        background-color: #003366;
         color: #FF6F61;
-        text-decoration: underline;
-        transition: color 0.3s ease;
     }
 
     /* Formulaire mobile-friendly */
@@ -145,27 +183,5 @@
             font-size: 14px;
         }
     }
-
-    /* Nouveau fond du formulaire */
-    .bloc.bg-dots-bg.bg-repeat {
-        background-color: #A3D9A5 !important; /* Fond vert menthe */
-    }
-    
-    .bloc.bgc-white.l-bloc {
-        background-color: #F4F4F4 !important; /* Fond off-white */
-    }
-
-    /* Changement de couleur du lien de l'adresse email */
-    .bloc-button {
-        background-color: #FF6F61;
-    }
-
-    .bloc-button:hover {
-        background-color: #003366;
-        color: #FF6F61;
-    }
-
-    .site-navigation li a:hover {
-        color: #FF6F61;
-    }
 </style>
+
