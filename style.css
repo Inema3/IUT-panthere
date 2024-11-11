@@ -197,13 +197,13 @@ a:hover, button:hover {
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: rgba(251, 236, 204, 1);
+    background: rgba(251, 236, 2, 1);
 }
 
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
-    color: rgba(251, 236, 204, 1);
-    border-color: rgba(251, 236, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .panel {
