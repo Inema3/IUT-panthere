@@ -36,7 +36,7 @@
 <div class="bloc bgc-white l-bloc" id="bloc-7">
     <div class="container bloc-lg">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6">
                 <form id="form_1" novalidate>
                     <fieldset>
                         <legend style="color: #003366;">Formulaire de contact</legend>
@@ -62,7 +62,7 @@
                     </fieldset>
                 </form>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6">
                 <p style="color: #003366;">
                     <strong>Contactez-nous</strong><br>
                     Email : <a href="mailto:contact@agencelapanthere.com" style="color: #FF6F61;">contact@agencelapanthere.com</a><br>
@@ -82,6 +82,8 @@
         transition: all 0.3s ease-in-out;
         border: 1px solid #d3d3d3;
         border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
     }
     .form-control:focus {
         border-color: #FF6F61;
@@ -89,18 +91,16 @@
         outline: none;
     }
 
+    /* Formulaire responsive */
+    .col-sm-12.col-md-6 {
+        margin-bottom: 20px;
+    }
+
     /* Changement de couleur du bouton au survol */
     .bloc-button:hover {
         background-color: #003366;
         color: #FF6F61;
         transition: all 0.3s ease;
-    }
-
-    /* Effet de survol pour les liens */
-    a:hover {
-        color: #FF6F61;
-        text-decoration: underline;
-        transition: color 0.3s ease;
     }
 
     /* Animation du bouton d'envoi */
@@ -114,5 +114,29 @@
         border-radius: 5px;
         cursor: pointer;
         transition: all 0.3s ease;
+    }
+
+    /* Effet de survol pour les liens */
+    a:hover {
+        color: #FF6F61;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+    }
+
+    /* Formulaire mobile-friendly */
+    @media (max-width: 768px) {
+        .col-sm-12.col-md-6 {
+            margin-bottom: 30px;
+        }
+
+        .bloc-button {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .form-control {
+            width: 100%;
+            font-size: 14px;
+        }
     }
 </style>
