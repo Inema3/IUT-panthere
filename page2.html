@@ -79,7 +79,7 @@
 <style>
     /* Fond du bloc Header */
     .bloc.bg-dots-bg {
-        background-color: #003366;
+        background-color: #003366 !important; /* Fond bleu marine avec la mention importante */
         color: white;
     }
 
@@ -148,11 +148,181 @@
 
     /* Nouveau fond du formulaire */
     .bloc.bg-dots-bg.bg-repeat {
-        background-color: #A3D9A5; /* Mint green background */
+        background-color: #A3D9A5 !important; /* Fond vert menthe */
     }
     
     .bloc.bgc-white.l-bloc {
-        background-color: #F4F4F4; /* Soft Off-White background */
+        background-color: #F4F4F4 !important; /* Fond off-white */
+    }
+
+    /* Changement de couleur du lien de l'adresse email */
+    .bloc-button {
+        background-color: #FF6F61;
+    }
+
+    .bloc-button:hover {
+        background-color: #003366;
+        color: #FF6F61;
+    }
+
+    .site-navigation li a:hover {
+        color: #FF6F61;
+    }
+</style><header class="bloc bgc-soft-coral l-bloc" id="bloc-0">
+    <div class="container bloc-sm">
+        <nav class="navbar row" aria-label="Navigation principale">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'agence La Panthère" height="40" srcset="img/agence-la-panthere-monochrome-small.svg 480w, img/agence-la-panthere-monochrome.svg 800w">
+                </a>
+            </div>
+            <div class="navbar-collapse navbar-1 special-dropdown-nav">
+                <ul class="site-navigation nav navbar-nav">
+                    <li><a href="index.html" style="color: #003366;">Accueil</a></li>
+                    <li><a href="contactez-nous.html" style="color: #003366;">Contactez-nous ➔</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Section Contact -->
+<div class="bloc bgc-mint-green bg-repeat d-bloc bloc-bg-texture texture-paper" id="bloc-6" aria-label="Section contact pour la création de sites web sur-mesure">
+    <div class="container bloc-lg">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1 class="hero-bloc-text" style="color: #003366;">Contactez La Panthère pour Créer Votre Site Web Sur-Mesure</h1>
+                <h2 style="color: #003366;">Solutions Web Innovantes et Adaptées à Vos Besoins</h2>
+                <p class="mg-lg tight-width-whitespace" style="color: #003366;">
+                    Nous sommes ravis de collaborer avec vous pour la création de votre site web sur-mesure.<br>
+                    Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Formulaire de Contact -->
+<div class="bloc bgc-off-white l-bloc" id="bloc-7">
+    <div class="container bloc-lg">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <form id="form_1" novalidate>
+                    <fieldset>
+                        <legend style="color: #003366;">Formulaire de contact</legend>
+                        <div class="form-group">
+                            <label for="name" style="color: #003366;">Nom</label>
+                            <input id="name" class="form-control" type="text" required aria-label="Nom complet" placeholder="Entrez votre nom" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="color: #003366;">Adresse email</label>
+                            <input id="email" class="form-control" type="email" required aria-label="Adresse email" placeholder="Entrez votre adresse email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="input_504" style="color: #003366;">Comment nous avez-vous connu ?</label>
+                            <input id="input_504" class="form-control" type="text" required aria-label="Comment nous avez-vous connu ?" placeholder="Exemple : Recherche Google" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message" style="color: #003366;">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
+                            <textarea id="message" class="form-control" rows="4" required aria-label="Détails du projet" placeholder="Expliquez votre projet en quelques lignes"></textarea>
+                        </div>
+                        <button class="bloc-button btn btn-lg btn-block" style="background-color: #FF6F61; color: #ffffff;" type="submit">
+                            Envoyer
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <p style="color: #003366;">
+                    <strong>Contactez-nous</strong><br>
+                    Email : <a href="mailto:contact@agencelapanthere.com" style="color: #FF6F61;">contact@agencelapanthere.com</a><br>
+                    Adresse : 2 place Sathonay, 69001 Lyon<br>
+                    Horaires : Du lundi au vendredi, de 9h à 18h<br>
+                    <strong>Nous rendre visite :</strong><br>
+                    <a href="https://www.google.com/maps" target="_blank" style="color: #FF6F61;">Voir le plan</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Fond du bloc Header */
+    .bloc.bg-dots-bg {
+        background-color: #003366 !important; /* Fond bleu marine avec la mention importante */
+        color: white;
+    }
+
+    /* Formulaire : transition de focus */
+    .form-control {
+        transition: all 0.3s ease-in-out;
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .form-control:focus {
+        border-color: #FF6F61;
+        box-shadow: 0 0 5px rgba(255, 111, 97, 0.6);
+        outline: none;
+    }
+
+    /* Formulaire responsive */
+    .col-sm-12.col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    /* Changement de couleur du bouton au survol */
+    .bloc-button:hover {
+        background-color: #003366;
+        color: #FF6F61;
+        transition: all 0.3s ease;
+    }
+
+    /* Animation du bouton d'envoi */
+    .bloc-button {
+        background-color: #FF6F61;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    /* Effet de survol pour les liens */
+    a:hover {
+        color: #FF6F61;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+    }
+
+    /* Formulaire mobile-friendly */
+    @media (max-width: 768px) {
+        .col-sm-12.col-md-6 {
+            margin-bottom: 30px;
+        }
+
+        .bloc-button {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .form-control {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+
+    /* Nouveau fond du formulaire */
+    .bloc.bg-dots-bg.bg-repeat {
+        background-color: #A3D9A5 !important; /* Fond vert menthe */
+    }
+    
+    .bloc.bgc-white.l-bloc {
+        background-color: #F4F4F4 !important; /* Fond off-white */
     }
 
     /* Changement de couleur du lien de l'adresse email */
