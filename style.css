@@ -26,12 +26,12 @@
     background-size: cover;
     position: relative;
     border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
-    transition: transform 0.3s ease; /* Animation lors du survol */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
 }
 
 .bloc:hover {
-    transform: translateY(-5px); /* Légère élévation lors du survol */
+    transform: translateY(-5px); 
 }
 body {
     margin: 0;
@@ -861,11 +861,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-color: url("img/agence-la-panthere.jpg");
+    background-color: url;
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-color: darkblue;
 }
 
 @media (max-width: 1024px) {
