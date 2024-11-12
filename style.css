@@ -853,11 +853,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-color:darkgreen;
+    background-color:darkorange;
 }
 
 .bg-presentation {
-    background-color:darkgreen;
+    background-color:darkorange;
 }
 
 @media (max-width: 1024px) {
