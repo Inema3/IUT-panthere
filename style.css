@@ -862,7 +862,11 @@ h4 {
 
 .bg-banniere {
 <<<<<<< HEAD
-    background-color: royalblue;
+    background-color: darkgray;
+=======
+    background-color: darkgrey;
+>>>>>>> 9ac135cb8ee19200a43bf2952e2ec3df90363ade
+}
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
