@@ -779,7 +779,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #F8D4D4!important;
 }
 
 .portfolio-thumb {
@@ -861,7 +861,7 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-color: royalblue;
 }
 
 .bg-presentation {
