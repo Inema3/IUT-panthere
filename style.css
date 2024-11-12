@@ -861,11 +861,7 @@ h4 {
 }
 
 .bg-banniere {
-<<<<<<< HEAD
-    background-color: royalblue;
-=======
-    background-color: royalblue;
->>>>>>> 9ac135cb8ee19200a43bf2952e2ec3df90363ade
+    background-color: url("img/agence-la-panthere.jpg");
 }
 
 .bg-presentation {
